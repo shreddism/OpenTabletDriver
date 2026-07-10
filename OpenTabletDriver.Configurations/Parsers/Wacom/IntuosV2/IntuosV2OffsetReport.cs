@@ -38,6 +38,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Wacom.IntuosV2
         public Vector2 Position { set; get; }
         public Vector2 Tilt { set; get; }
         public uint Pressure { set; get; }
+        public float ScaledPressure { set; get; }
         public bool Eraser { set; get; }
         public bool[] PenButtons { set; get; }
         public bool NearProximity { set; get; }

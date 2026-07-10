@@ -35,6 +35,7 @@ namespace OpenTabletDriver.Configurations.Parsers.ViewSonic
         public byte[] Raw { set; get; }
         public Vector2 Position { set; get; }
         public uint Pressure { set; get; }
+        public float ScaledPressure { set; get; }
         public Vector2 Tilt { get; set; }
         public bool[] PenButtons { set; get; }
     }

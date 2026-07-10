@@ -34,6 +34,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Huion
         public Vector2 Position { set; get; }
         public Vector2 Tilt { set; get; }
         public uint Pressure { set; get; }
+        public float ScaledPressure { set; get; }
         public bool[] PenButtons { set; get; }
     }
 }

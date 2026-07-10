@@ -28,13 +28,13 @@ namespace OpenTabletDriver.Desktop.Binding
                     uint maxPressure = tablet.Properties.Specifications.Pen.MaxPressure;
 
                     if (valueMaxed)
-                        tabletReport.Pressure = maxPressure;
+                        tabletReport.ScaledPressure = maxPressure;
                     else // remap pressure based on the amount we went above the activation threshold
-                        tabletReport.Pressure =
-                            (uint)(maxPressure * ((value - ActivationThreshold) / (MaximumThreshold - ActivationThreshold)));
+                        tabletReport.ScaledPressure =
+                            (maxPressure * ((value - ActivationThreshold) / (MaximumThreshold - ActivationThreshold)));
                 }
                 else
-                    tabletReport.Pressure = 0;
+                    tabletReport.ScaledPressure = 0f;
             }
 
             base.Invoke(tablet, report, meetsThreshold);

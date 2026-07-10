@@ -38,6 +38,7 @@ namespace OpenTabletDriver.Configurations.Parsers.FlooGoo
         public byte[] Raw { get; set; }
         public Vector2 Position { get; set; }
         public uint Pressure { get; set; }
+        public float ScaledPressure { set; get; }
         public bool[] PenButtons { get; set; }
         public Vector2 Tilt { get; set; }
         public bool Eraser { get; set; }
